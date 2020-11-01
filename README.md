@@ -101,3 +101,18 @@ $ cat /sys/module/kvm_intel/parameters/nested
 Y
 ```
 
+# Debug
+
+Error starting domain: Requested operation is not valid: network 'default' is not active
+
+```bash
+sudo virsh net-list --all
+
+Name      State      Autostart   Persistent
+----------------------------------------------
+ default   inactive   no          yes
+```
+
+```bash
+sudo virsh net-start default
+```
