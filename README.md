@@ -12,8 +12,12 @@ sudo pacman -S qemu virt-manager virt-viewer dnsmasq vde2 bridge-utils openbsd-n
 Also install ebtables  and iptables packages:
 
 ```bash
-sudo pacman -S ebtables iptables
+#sudo pacman -S ebtables iptables
 ```
+```bash
+sudo pacman -S iptables-nft 
+```
+
 
 ## Install libguestfs
 
